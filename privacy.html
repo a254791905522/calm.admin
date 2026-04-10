@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy — CalmAdmin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #e8ebe6;
+            background-image:
+                linear-gradient(180deg, #eef2ed 0%, #e4e9e3 50%, #dfe6df 100%);
+            color: #3a4540;
+            line-height: 1.75;
+            min-height: 100vh;
+        }
+
+        .layout {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 48px 22px 80px;
+            display: grid;
+            gap: 0;
+        }
+
+        header.doc-header {
+            border-bottom: 2px solid #3d6b52;
+            padding-bottom: 28px;
+            margin-bottom: 36px;
+        }
+
+        header.doc-header .label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: #5a7a66;
+            margin-bottom: 10px;
+        }
+
+        header.doc-header h1 {
+            font-family: 'Fraunces', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: #1e2822;
+            letter-spacing: -0.02em;
+            margin-bottom: 6px;
+        }
+
+        header.doc-header .meta {
+            font-size: 0.9rem;
+            color: #5c6b62;
+            font-weight: 500;
+        }
+
+        section {
+            margin-bottom: 36px;
+        }
+
+        section h2 {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: #3d6b52;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #c5d4c8;
+        }
+
+        section p {
+            font-size: 0.96rem;
+            color: #3a4540;
+            margin-bottom: 12px;
+        }
+
+        section p:last-child {
+            margin-bottom: 0;
+        }
+
+        section strong {
+            color: #1e2822;
+            font-weight: 600;
+        }
+
+        .callout {
+            background: #f6f8f5;
+            border: 1px solid #b8cbb8;
+            border-radius: 8px;
+            padding: 18px 20px;
+            margin-top: 16px;
+        }
+
+        .callout p {
+            margin-bottom: 0;
+            font-size: 0.94rem;
+        }
+
+        ol.steps {
+            counter-reset: step;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ol.steps li {
+            position: relative;
+            padding-left: 40px;
+            margin-bottom: 18px;
+            font-size: 0.96rem;
+            color: #3a4540;
+        }
+
+        ol.steps li:last-child {
+            margin-bottom: 0;
+        }
+
+        ol.steps li::before {
+            counter-increment: step;
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 26px;
+            height: 26px;
+            border-radius: 6px;
+            background: #3d6b52;
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fine-print {
+            font-size: 0.88rem;
+            color: #5c6b62;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed #b8cbb8;
+        }
+
+        nav.back {
+            margin-top: 48px;
+        }
+
+        nav.back a {
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.92rem;
+            color: #3d6b52;
+            text-decoration: none;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        nav.back a:hover {
+            color: #2a4d3a;
+            border-bottom-color: #3d6b52;
+        }
+
+        @media (max-width: 640px) {
+            .layout { padding: 32px 18px 64px; }
+            header.doc-header h1 { font-size: 1.65rem; }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="layout">
+        <header class="doc-header">
+            <p class="label">CalmAdmin</p>
+            <h1>Privacy summary</h1>
+            <p class="meta">Effective: April 2026 · For the iOS app distributed on the App Store</p>
+        </header>
+
+        <section>
+            <h2>Scope</h2>
+            <p>This page describes how privacy is treated in connection with <strong>CalmAdmin</strong> as offered on Apple’s App Store. It is a plain-language companion to Apple’s own disclosures and your device settings; it does not replace Apple’s terms or system documentation.</p>
+        </section>
+
+        <section>
+            <h2>Data collection</h2>
+            <p>Per the app’s App Store privacy label, the publisher has indicated that <strong>CalmAdmin does not collect data</strong> from this app for the categories shown in Apple’s “App Privacy” section. Practices may still vary by iOS version, features you use, or future updates—check the latest listing on the App Store for the current label.</p>
+            <div class="callout">
+                <p><strong>Note:</strong> Apple processes information when you download, update, or use the App Store, sign in with an Apple ID, or use platform services. That processing is governed by Apple, not this app.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Your documents &amp; device</h2>
+            <p>CalmAdmin is built around paperwork you bring into the app. Processing such as <strong>viewing, organizing, OCR, and search</strong> is intended to support your workflow on device. Unless a future version explicitly introduces cloud sync or similar features described in the store listing, information you add should remain under your control on the hardware you use.</p>
+        </section>
+
+        <section>
+            <h2>Permissions</h2>
+            <p>The app may request access to Photos, Files, or the share sheet so you can import documents. You can grant or revoke these permissions in <strong>Settings</strong> on your iPhone or iPad at any time.</p>
+        </section>
+
+        <section>
+            <h2>Age rating</h2>
+            <p>CalmAdmin is rated <strong>4+</strong>. Parents and guardians can use Apple’s parental controls (for example Screen Time and Ask to Buy) to manage installs and purchases.</p>
+        </section>
+
+        <section>
+            <h2>Updates to this summary</h2>
+            <p>We may revise this text to keep it accurate when the app or store information changes. The <strong>effective date</strong> at the top will be updated when a new version is published.</p>
+        </section>
+
+        <section>
+            <h2>If you have questions</h2>
+            <p>For privacy questions specific to the app, use the contact options Apple provides for the App Store product page (for example “App Support” where available). General platform questions belong with <strong>Apple Support</strong>.</p>
+            <ol class="steps">
+                <li>Open the CalmAdmin listing on the App Store.</li>
+                <li>Use the publisher or support links shown there, if present.</li>
+                <li>For account, device, or payment issues, contact Apple directly.</li>
+            </ol>
+            <p class="fine-print">This summary is provided for convenience. The authoritative App Store privacy nutrition label and in-app notices (if any) take precedence if they differ from this page.</p>
+        </section>
+
+        <nav class="back">
+            <a href="index.html">← Back to app overview</a>
+        </nav>
+    </div>
+</body>
+
+</html>
